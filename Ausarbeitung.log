@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.6)  10 AUG 2022 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.6)  10 AUG 2022 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,6 +288,188 @@ Package csquotes Info: ... configuration file loaded successfully.
 (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
 ))
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.s
+ty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefineke
+ys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.s
+ty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+)
+\@linkdim=\dimen159
+\Hy@linkcounter=\count284
+\Hy@pagecounter=\count285
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count286
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4390.
+\c@Hy@tempcnt=\count287
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4749.
+\XeTeXLinkMargin=\dimen160
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.s
+ty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count288
+\Field@Width=\dimen161
+\Fld@charsize=\dimen162
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count289
+\c@Item=\count290
+\c@Hfootnote=\count291
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count292
+\c@bookmark@seq@number=\count293
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilec
+heck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecou
+nter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip66
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\hypcap.sty
+Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count294
+\lst@gtempboxa=\box54
+\lst@token=\toks26
+\lst@length=\count295
+\lst@currlwidth=\dimen163
+\lst@column=\count296
+\lst@pos=\count297
+\lst@lostspace=\dimen164
+\lst@width=\dimen165
+\lst@newlines=\count298
+\lst@lineno=\count299
+\lst@maxwidth=\dimen166
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count300
+\lst@skipnumbers=\count301
+\lst@framebox=\box55
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/mdwtools\footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box56
+\fn@width=\dimen167
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -296,25 +478,29 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfte
 x.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count284
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count302
+\l__pdf_internal_box=\box57
 ) (Ausarbeitung.aux)
 \openout1 = `Ausarbeitung.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -353,17 +539,17 @@ LaTeX Font Info:    ... okay on input line 36.
 
 (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count285
-\scratchdimen=\dimen159
-\scratchbox=\box55
-\nofMPsegments=\count286
-\nofMParguments=\count287
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count288
-\MPscratchDim=\dimen160
-\MPnumerator=\count289
-\makeMPintoPDFobject=\count290
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count303
+\scratchdimen=\dimen168
+\scratchbox=\box58
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen169
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks28
 )
 (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-bas
 e.sty
@@ -373,32 +559,154 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 
 (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) [1
+))
+Package hyperref Info: Link coloring OFF on input line 70.
+ (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitle
+string.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count309
+)
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
+ (Ausarbeitung.out) (Ausarbeitung.out)
+\@outlinefile=\write3
+\openout3 = `Ausarbeitung.out'.
+
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message adding:
+(scrartcl)             \usepackage{bookmark}
+(scrartcl)           before \begin{document} on input line 70.
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count310
+))
+\c@lstlisting=\count311
+[1
 
 
 {C:/Users/Zoe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (Ausarbeitung.toc)
-\tf@toc=\write3
-\openout3 = `Ausarbeitung.toc'.
+\tf@toc=\write4
+\openout4 = `Ausarbeitung.toc'.
 
- [2] [1] [2] (Ausarbeitung.aux) ) 
+ [2] (Ausarbeitung.lof)
+\tf@lof=\write5
+\openout5 = `Ausarbeitung.lof'.
+
+ [3] [1]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+[]\OT1/cmr/m/n/12 Zust[]andig f[]ur die Be-we-gung des Spie-lers, des
+ []
+
+[2] (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) [3]
+<Abbildungen/Snake_Hauptmenü.png, id=107, 311.66437pt x 656.4525pt>
+File: Abbildungen/Snake_Hauptmenü.png Graphic file (type png)
+<use Abbildungen/Snake_Hauptmenü.png>
+Package pdftex.def Info: Abbildungen/Snake_Hauptmenü.png  used on input line 1
+76.
+(pdftex.def)             Requested size: 176.40439pt x 371.55745pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[][]\OT1/cmr/m/n/12 Snake Web-si-te
+ []
+
+<Abbildungen/Snake_Hauptmenü_Warteschlange.png, id=109, 312.41719pt x 656.4525
+pt>
+File: Abbildungen/Snake_Hauptmenü_Warteschlange.png Graphic file (type png)
+<use Abbildungen/Snake_Hauptmenü_Warteschlange.png>
+Package pdftex.def Info: Abbildungen/Snake_Hauptmenü_Warteschlange.png  used o
+n input line 182.
+(pdftex.def)             Requested size: 176.40439pt x 370.66597pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[][][]\OT1/cmr/m/n/12 Snake Web-si-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+\OT1/cmr/m/n/12 Haupt-men[]u in
+ []
+
+[4 <./Abbildungen/Snake_Hauptmenü.png> <./Abbildungen/Snake_Hauptmenü_Wartesc
+hlange.png>]
+<Abbildungen/Snake_Controller_hint_1.png, id=117, 311.66437pt x 657.95813pt>
+File: Abbildungen/Snake_Controller_hint_1.png Graphic file (type png)
+<use Abbildungen/Snake_Controller_hint_1.png>
+Package pdftex.def Info: Abbildungen/Snake_Controller_hint_1.png  used on input
+ line 193.
+(pdftex.def)             Requested size: 176.40439pt x 372.40965pt.
+<Abbildungen/Snake_Controller_hint_2.png, id=118, 312.41719pt x 656.4525pt>
+File: Abbildungen/Snake_Controller_hint_2.png Graphic file (type png)
+<use Abbildungen/Snake_Controller_hint_2.png>
+Package pdftex.def Info: Abbildungen/Snake_Controller_hint_2.png  used on input
+ line 199.
+(pdftex.def)             Requested size: 176.40439pt x 370.66597pt.
+ [5 <./Abbildungen/Snake_Controller_hint_1.png> <./Abbildungen/Snake_Controller
+_hint_2.png>]
+<Abbildungen/Snake_Controller.png, id=125, 314.67563pt x 657.2053pt>
+File: Abbildungen/Snake_Controller.png Graphic file (type png)
+<use Abbildungen/Snake_Controller.png>
+Package pdftex.def Info: Abbildungen/Snake_Controller.png  used on input line 2
+10.
+(pdftex.def)             Requested size: 176.40439pt x 368.42355pt.
+<Abbildungen/Snake_Gameover.png, id=126, 313.17pt x 655.69969pt>
+File: Abbildungen/Snake_Gameover.png Graphic file (type png)
+<use Abbildungen/Snake_Gameover.png>
+Package pdftex.def Info: Abbildungen/Snake_Gameover.png  used on input line 216
+.
+(pdftex.def)             Requested size: 176.40439pt x 369.36044pt.
+ [6 <./Abbildungen/Snake_Controller.png> <./Abbildungen/Snake_Gameover.png>] [7
+] (Ausarbeitung.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `Ausarbeitung.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
 Here is how much of TeX's memory you used:
- 7350 strings out of 478582
- 142842 string characters out of 2845289
- 586030 words of memory out of 3000000
- 25488 multiletter control sequences out of 15000+600000
- 473058 words of font info for 41 fonts, out of 8000000 for 9000
+ 16777 strings out of 478582
+ 287899 string characters out of 2845289
+ 963734 words of memory out of 3000000
+ 34701 multiletter control sequences out of 15000+600000
+ 477068 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,7n,106p,10609b,358s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\Zoe\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Zoe/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Zoe/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Zoe/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Zoe/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on Ausarbeitung.pdf (4 pages, 46136 bytes).
+ 108i,18n,106p,10609b,1336s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\Zoe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200
+.pk><C:/Users/Zoe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Users/Zoe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb><C:/Users/Zoe/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr17.pfb><C:/Users/Zoe/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Users/Zoe/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb><C:/Users/Zoe/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Zoe/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Zoe/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Zoe/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Ausarbeitung.pdf (10 pages, 425726 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
