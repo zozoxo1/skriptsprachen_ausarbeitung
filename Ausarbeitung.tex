@@ -1,0 +1,53 @@
+\documentclass[a4paper,12pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage[a4paper, left=3cm, right=2.5cm, top=2.5cm, bottom=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{csquotes}
+
+\title {\textbf{Abschlussbericht}}
+\author{Zoe Luca Günther}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 15em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    \vskip 1em%
+    {\Large TITEL \par}%
+    \vskip 5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\begin{document}
+
+\pagenumbering{Roman}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+\section{Einleitung}
+
+\newpage
+\section{Quellenverzeichnis}
+\begin{itemize}
+\item test
+\end{itemize}
+
+\end{document}
