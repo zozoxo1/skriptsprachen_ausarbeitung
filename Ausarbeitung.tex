@@ -32,7 +32,8 @@
     showspaces=false,                
     showstringspaces=false,
     showtabs=false,                  
-    tabsize=2
+    tabsize=2,
+    language=Python
 }
 
 \lstset{style=mystyle}
@@ -79,13 +80,20 @@
 \pagenumbering{arabic}
 
 \section{Einleitung}
-% was habe ich in diesem projekt gemacht
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Einleitung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 In diesem Projekt habe ich ein Snake Spiel entwickelt. Hierbei ist das besondere, dass man dieses Snake Spiel über die Lagesensoren des Handys steuern kann. Man verbindet sich mit einer Website, geht in die Warteschlange rein und sobald man an der Reihe ist, wird man zur Spielsteuerung weitergeleitet [\ref{fig:main-menu}][\ref{fig:main-menu-queue}]. Am Anfang jedes Spiels wird ein kurzer Hinweis am Handy eingeblendet, welcher einem sagt, dass man das Handy vertikal und flach halten soll und die Bildschirmrotation deaktiviert werden sollte [\ref{fig:controller-hint-1}][\ref{fig:controller-hint-2}]. Dies ist wichtig, damit die Steuerung richtig funktioniert, da man um das Spiel zu steuern, lediglich sein Handy neigen muss. Um Das Spielerlebnis so gut wie möglich zu halten, muss das Handy flach und vertikal gehalten werden, da so die Steuerung am besten funktioniert, da diese sehr sensibel sein kann.
 Um das Spielgeschehen zu sehen, wird ein Raspberry Pi mit einer 64x64 LED Matrix verwendet, worauf der Score und das Spiel dargestellt werden. Um das Spiel zu pausieren, klickt man lediglich auf seinem Handy auf den Pause Button [\ref{fig:controller}]. Dies geht jedoch nur, wenn man gerade an der Reihe ist. Um dies zu überprüfen, wird beim ersten betreten der Spiel Website ein Cookie gesetzt, worin die User ID steht. Jede ID ist unterschiedlich, um eine genaue Identifizierung zu ermöglichen.
 Sollte sich ein Spieler für mehr als 20 Sekunden im Pause Status befinden, oder mehr als 20 Sekunden keine Bewegung mehr machen, wird das Spiel beendet und der nächste Spieler aus der Warteschlange kann spielen. Nachdem man sich selber als Schlange gefressen hat, oder man zu lange im Spiel war, wird man auf eine Game Over Seite weitergeleitet, wo der eigene Score eingeblendet wird [\ref{fig:gameover}].
 % bilder als anhang
 
 \section{Vorgehensweise}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Vorgehensweise
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % wie bin ich vorgegangen und welche tools habe ich benutzt
 % erst in pygame das grundgerüst gemacht
 % dann die api
@@ -96,6 +104,10 @@ Das Projekt wurde in verschiedene Unterpunkte eingeteilt, um die bestmögliche I
 
 
 \subsection{Grundgerüst}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Grundgerüst
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{grundgerüst}
 Das Grundgerüst besteht aus verschiedenen Klassen, welche für den Spielablauf essentiell sind. Folgende Klassen beinhaltet das Grundgerüst:
 
 \newpage
@@ -131,15 +143,95 @@ Prefix.py & Prefix zu Debug Zwecken \\
 Zum testen der Funktionalitäten, wurde das Spiel vorerst mithilfe der Bibliothek \textit{pygame} implementiert. Somit konnte das Spiel dargestellt werden, die Bewegungsabläufe getestet und der Spielablauf angepasst werden. Für den Gameloop wurde jedoch zu diesem Zeitpunkt die pygame eigenen Funktionen verwendet. Die Steuerung wurde vorerst über die Tastatur implementiert, da die spätere Steuerung über die Website mithilfe der API Schnittstelle funktioniert.
 
 \subsection{Website}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Website
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{API Schnittstelle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	API Schnittstellt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Das Web Framework \textit{fastapi} ist ein modernes, hoch performanted Python Framework. Es ist einfach zu handhaben und bietet alle nötigen Funktionen, welche in diesem Projekt benötigt werden. Diese sind verschiedene CRUD\footnote{create, read, update, delete} Operationen, das mitgeben eines HTML Statuscodes und das auslesen von Cookies, um die UserId abzufragen. Um die verschiedenen Klassen aus \autoref{grundgerüst} zu verwenden, muss dem Systempfad ein weiterer Pfad hinzugefügt werden, dem Übergeordneten Ordner, da sich die Backend API in einem eigenen Unterordner befindet:
+
+\begin{lstlisting}
+import sys
+
+sys.path.append('../snake')
+
+"""
+Ordnerstruktur:
+
+snake
+	backend
+	static
+	enums
+"""
+\end{lstlisting}
+
+Jede Schnittstelle hat anfangs den gleichen Ablauf: Es wird überprüft, ob ein UserId Cookie vorhanden ist. Ist dies nicht der Fall, wird durch den Logger, welcher in \autoref{grundgerüst} beschrieben ist, eine Mitteilung ausgegeben und der weitere Zugriff verwährt. Es wird ein JSON Objekt zurückgegeben, welches eine Nachricht und den Erfolgsstatus beinhaltet. Der Statuscode wird hierbei auf \textit{401 UNAUTHORIZED} gesetzt:
+
+\begin{lstlisting}
+if not userId:
+	Logger.log(f"{userId}: UNAUTHORIZED", Prefix.API)
+	response.status_code = status.HTTP_401_UNAUTHORIZED
+	return {"message": "userId cookie not set", "success": False}
+\end{lstlisting}
+
+Sind die weiteren Voraussetzungen erfüllt, wie in etwa ob der Spieler, welcher eine Bewegung angefragt hat momentan an der Reihe ist, wird die jeweilige Aktion ausgeführt und der Benutzer, welcher die Anfrage gestellt hat, bekommt eine Erfolgsmeldung:
+
+\begin{lstlisting}
+return {"message": f"success message", "success": True}
+\end{lstlisting}
+
+Die JSON Objekte werden im Frontend verarbeitet.\\
+Folgende Operationen werden durch die API geboten:
+
+
+\newpage
+
+\begin{table}
+\centering
+\begin{tabular}[!htb]{p{4cm}|p{4cm}|p{8cm}}
+Pfad & REST (CRUD Operation) & Beschreibung \\
+\hline
+/move/{direction} & Put (update) & Bewegt die Snake in eine neue Richtung \\
+/start & Put (create) & Startet das Spiel \\
+/pause & Put (update) & Pausiert das Spiel \\
+/queue/join & Put (create) & Tritt der Queue bei \\
+/queue/leave & Put (update) & Verlässt die Queue \\
+/queue/length & Get (read) & Fragt die aktuelle Queue größe ab. Wenn ein Spieler momentan spielt, zählt dieser als ein Spieler in der Queue extra \\
+/current\_user & Get (read) & Fragt ab, ob der Spieler, welcher die Anfrage gestellt hat, berechtigt ist zu Spielen (als nächstes dran ist) \\
+/surrender & Delete (delete) & Gibt das Spiel direkt auf (für Debug Zwecke) \\
+/gameover & Get (read) & Gibt zurück ob das Spiel vorbei ist und ob der Benutzer momentan Berechtigt ist zu spielen \\
+/score & Get (read) & Gibt den Score zurück, sofern der Spieler bereits ein Spiel gespielt hat \\
+/threads & Get (read) & Gibt alle laufenden Threads aus (für Debug Zwecke)
+\end{tabular}
+\caption{API Methoden}
+\end{table}
+
+% Uvicorn mit einbringen
+
 \subsection{Darstellung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Darstellung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Für die Darstellung des Spielfeldes und des Scores wird die Bibliothek \textit{rpi-rgb-led-matrix} verwendet. Diese Bibliothek ist auf https://github.com/hzeller/rpi-rgb-led-matrix zu finden. Sie wird direkt auf dem Raspberry Pi installiert und kann direkt in Python eingebunden werden. Dank dieser Bibliothek kann man einzelne Pixel darstellen, oder ganze Texte. Es werden verschiedene Schriftgrößen mitgeliefert. Um das Spielfeld darzustellen, wird die Spielfeldmatrix genommen und in Pixel übersetzt. Jeder Spielfeldblock wird auf der LED Matrix in der Größe 2x2 dargestellt, um die Sichtbarkeit zu erhöhen. Außerdem wurde der Hintergrund dunkler eingestellt von der Helligkeit her, um das Spielerlebnis zu fördern. Die Display Klasse, welche für die Darstellung zuständig ist, ist von der Klasse \textit{SampleBase.py} abgeleitet und beinhaltet daher die Funktion \textit{process}, welche den infinity loop und somit die Darstellung startet. Die Display Klasse beinhaltet daher eine Funktion \textit{terminate}, um den loop zu unterbrechen. Die damit verbundenen Schwierigkeiten sind in \autoref{schwierigkeiten} beschrieben.
 
 
+\label{schwierigkeiten} % schwierigkeit mit reinbringen, dass uvicorn gestartet werden musste über startbefehl außerhalb der console
 \section{Schwierigkeiten}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Schwierigkeiten
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Die größte Schwierigkeit war, die API nicht zu unterbrechen, während das Spiel läuft. Es wurde \textit{multithreading} verwendet, um verschiedene Thread parallel laufen zu lassen. Somit laufen im fertigen Projekt der Thread für die Darstellung des Spiels auf dem Raspberry Pi, der Gameloop, die Überprüfung ob ein Spieler keine Inputs mehr macht und somit nicht mehr anwesend ist (AFK\footnote{away from keyboard, abwesend}) und die API Schnittstelle parallel. Es wurde versucht, einen neuen Prozess für die Darstellung auf dem Display zu verwenden, jedoch können live updates in einem separaten Prozess nicht mehr nachverfolgt werden, weshalb die Thread Variante verwendet worden ist. Die Thread wurden als \textit{daemon} Threads gestartet, damit man sie zu jedem Zeitpunkt durch ein Interrupt unterbrechen kann. Die Implementierung sieht wie folgt aus, sobald die start Methode von der API Schnittstelle aufgerufen wird:
 
 % hier code von den threads anzeigen.
-\begin{lstlisting}[language=Python, numbers=left]
+\begin{lstlisting}
+import threading
+
 # Threads initialisieren
 displayThread = threading.Thread(name="Display", target=display.process)
 displayThread.daemon = True
@@ -166,9 +258,15 @@ displayThread.join()
 Entscheidend ist hierbei die Reihenfolge, in der die Threads gestartet und gestoppt werden. Zu beachten ist außerdem, dass der Display Thread eine Funktion benötigt, um terminiert zu werden, ansonsten kann er nicht gestoppt werden. die Loops greifen jeweils auf den Gamestatus zu, um den in jedem Thread integrierten \textit{infinity loop} zu unterbrechen, sollte sich der Gamestatus ändern und der Thread nicht mehr benötigt werden. Somit erklärt sich auch die Reihenfolge, in welcher die Thread beendet werden. Sobald das Spiel vorbei ist und der Gameloop beendet wird, kann die afk Überprüfung ebenfalls beendet werden. Da das Spiel vorbei ist wird außerdem zum Schluss der Displaythread beendet, da es kein Spiel mehr zum darstellen gibt. Somit gehen alle Aktionen der restlichen Threads vom eigentlichen Gameloop aus.
 
 \section{Ergebnisse}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Ergebnisse
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
 \section{Abbildungen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Abbildungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % hauptmenü
 \begin{figure}[!h]
@@ -222,6 +320,10 @@ Entscheidend ist hierbei die Reihenfolge, in der die Threads gestartet und gesto
 \newpage
 
 \section{Quellenverzeichnis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Quellenverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{itemize}
 \item test
 \end{itemize}

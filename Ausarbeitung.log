@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.6)  10 AUG 2022 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.6)  10 AUG 2022 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -465,6 +465,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
+(C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
 (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/mdwtools\footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box56
@@ -483,24 +486,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (Ausarbeitung.aux)
 \openout1 = `Ausarbeitung.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -560,7 +563,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 71.
  (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -573,9 +576,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
  (Ausarbeitung.out) (Ausarbeitung.out)
 \@outlinefile=\write3
 \openout3 = `Ausarbeitung.out'.
@@ -587,7 +590,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 70.
+(scrartcl)           before \begin{document} on input line 71.
 
 (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -610,85 +613,85 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \openout5 = `Ausarbeitung.lof'.
 
  [3] [1]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 []\OT1/cmr/m/n/12 Zust[]andig f[]ur die Be-we-gung des Spie-lers, des
  []
 
-[2] (C:\Users\Zoe\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [3]
-<Abbildungen/Snake_Hauptmenü.png, id=107, 311.66437pt x 656.4525pt>
+[2] [3]
+Overfull \hbox (50.22635pt too wide) in paragraph at lines 195--210
+ [][] 
+ []
+
+[4] [5]
+<Abbildungen/Snake_Hauptmenü.png, id=144, 311.66437pt x 656.4525pt>
 File: Abbildungen/Snake_Hauptmenü.png Graphic file (type png)
 <use Abbildungen/Snake_Hauptmenü.png>
-Package pdftex.def Info: Abbildungen/Snake_Hauptmenü.png  used on input line 1
-76.
+Package pdftex.def Info: Abbildungen/Snake_Hauptmenü.png  used on input line 2
+74.
 (pdftex.def)             Requested size: 176.40439pt x 371.55745pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 [][]\OT1/cmr/m/n/12 Snake Web-si-te
  []
 
-<Abbildungen/Snake_Hauptmenü_Warteschlange.png, id=109, 312.41719pt x 656.4525
+<Abbildungen/Snake_Hauptmenü_Warteschlange.png, id=146, 312.41719pt x 656.4525
 pt>
 File: Abbildungen/Snake_Hauptmenü_Warteschlange.png Graphic file (type png)
 <use Abbildungen/Snake_Hauptmenü_Warteschlange.png>
 Package pdftex.def Info: Abbildungen/Snake_Hauptmenü_Warteschlange.png  used o
-n input line 182.
+n input line 280.
 (pdftex.def)             Requested size: 176.40439pt x 370.66597pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--183
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
 [][][]\OT1/cmr/m/n/12 Snake Web-si-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--183
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
 \OT1/cmr/m/n/12 Haupt-men[]u in
  []
 
-[4 <./Abbildungen/Snake_Hauptmenü.png> <./Abbildungen/Snake_Hauptmenü_Wartesc
+[6 <./Abbildungen/Snake_Hauptmenü.png> <./Abbildungen/Snake_Hauptmenü_Wartesc
 hlange.png>]
-<Abbildungen/Snake_Controller_hint_1.png, id=117, 311.66437pt x 657.95813pt>
+<Abbildungen/Snake_Controller_hint_1.png, id=153, 311.66437pt x 657.95813pt>
 File: Abbildungen/Snake_Controller_hint_1.png Graphic file (type png)
 <use Abbildungen/Snake_Controller_hint_1.png>
 Package pdftex.def Info: Abbildungen/Snake_Controller_hint_1.png  used on input
- line 193.
+ line 291.
 (pdftex.def)             Requested size: 176.40439pt x 372.40965pt.
-<Abbildungen/Snake_Controller_hint_2.png, id=118, 312.41719pt x 656.4525pt>
+<Abbildungen/Snake_Controller_hint_2.png, id=154, 312.41719pt x 656.4525pt>
 File: Abbildungen/Snake_Controller_hint_2.png Graphic file (type png)
 <use Abbildungen/Snake_Controller_hint_2.png>
 Package pdftex.def Info: Abbildungen/Snake_Controller_hint_2.png  used on input
- line 199.
+ line 297.
 (pdftex.def)             Requested size: 176.40439pt x 370.66597pt.
- [5 <./Abbildungen/Snake_Controller_hint_1.png> <./Abbildungen/Snake_Controller
+ [7 <./Abbildungen/Snake_Controller_hint_1.png> <./Abbildungen/Snake_Controller
 _hint_2.png>]
-<Abbildungen/Snake_Controller.png, id=125, 314.67563pt x 657.2053pt>
+<Abbildungen/Snake_Controller.png, id=161, 314.67563pt x 657.2053pt>
 File: Abbildungen/Snake_Controller.png Graphic file (type png)
 <use Abbildungen/Snake_Controller.png>
-Package pdftex.def Info: Abbildungen/Snake_Controller.png  used on input line 2
-10.
+Package pdftex.def Info: Abbildungen/Snake_Controller.png  used on input line 3
+08.
 (pdftex.def)             Requested size: 176.40439pt x 368.42355pt.
-<Abbildungen/Snake_Gameover.png, id=126, 313.17pt x 655.69969pt>
+<Abbildungen/Snake_Gameover.png, id=162, 313.17pt x 655.69969pt>
 File: Abbildungen/Snake_Gameover.png Graphic file (type png)
 <use Abbildungen/Snake_Gameover.png>
-Package pdftex.def Info: Abbildungen/Snake_Gameover.png  used on input line 216
+Package pdftex.def Info: Abbildungen/Snake_Gameover.png  used on input line 314
 .
 (pdftex.def)             Requested size: 176.40439pt x 369.36044pt.
- [6 <./Abbildungen/Snake_Controller.png> <./Abbildungen/Snake_Gameover.png>] [7
+ [8 <./Abbildungen/Snake_Controller.png> <./Abbildungen/Snake_Gameover.png>] [9
 ] (Ausarbeitung.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Ausarbeitung.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16777 strings out of 478582
- 287899 string characters out of 2845289
- 963734 words of memory out of 3000000
- 34701 multiletter control sequences out of 15000+600000
+ 16819 strings out of 478582
+ 288437 string characters out of 2845289
+ 963819 words of memory out of 3000000
+ 34717 multiletter control sequences out of 15000+600000
  477068 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,18n,106p,10609b,1336s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 108i,18n,106p,10609b,2061s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -704,9 +707,9 @@ ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Zoe/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Zoe/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Zoe/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Ausarbeitung.pdf (10 pages, 425726 bytes).
+Output written on Ausarbeitung.pdf (12 pages, 444593 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
