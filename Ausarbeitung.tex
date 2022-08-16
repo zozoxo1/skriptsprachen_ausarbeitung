@@ -42,7 +42,7 @@
 \makesavenoteenv{table}
 \makesavenoteenv{tabular}
 
-\title {Ausarbeitung}
+\title {\textbf{Ausarbeitung}}
 \author{Zoe Luca Günther}
 
 \makeatletter
@@ -99,6 +99,7 @@ Sollte sich ein Spieler für mehr als 20 Sekunden im Pause Status befinden, oder
 % dann die api
 % dann die darstellung auf dem raspi mit rpi rgb matrix api
 % welche bibliothekene habe ich benutzt
+% warum lagesensor
 
 Das Projekt wurde in verschiedene Unterpunkte eingeteilt, um die bestmögliche Implementierung sicherzustellen.
 
@@ -146,6 +147,56 @@ Zum testen der Funktionalitäten, wurde das Spiel vorerst mithilfe der Bibliothe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Website
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Der Hauptteil der Website besteht aus dem Styling (CSS\footnote{Cascading Style Sheets, Gestaltungs- und Formatierungssprache}) und den Funktionen (JS\footnote{JavaScript, für dynamisches HTML}), da im Hintergrund auf die API Schnittstelle zugegriffen werden muss und um Animationen für den Benutzer anzuzeigen, um das Benutzererlebnis an erster Stelle zu halten. Somit ist die Website speziell für die Mobilen Endgeräte konzipiert, da die Steuerung über dieses im weiteren Verlauf erfolgt. Was diese Spezialisierung ausmacht ist, dass die Schriftgröße besonders auf kleine Geräte angepasst ist und die Ladezeiten so gering wie möglich gehalten werden, da diese Seite meist aus dem normalen Mobilfunknetz aufgerufen wird. Außerdem wird ein responsive Design\footnote{Responsive bedeutet in dem Fall zum Beispiel ``auf jemanden eingehen'' oder ``reaktionsfähig bleiben''} verwendet, um die Website jederzeit an fast jedes Endgerät anzupassen. ``Mobile first'' spielt hierbei eine große Rolle, unter dem Aspekt der Steuerung, aber auch unter dem Aspekt, dass man davon ausgehen kann, dass die meisten Websites heutzutage mit dem Smartphone aufgerufen werden, da man dies zu jederzeit dabei haben kann. \\
+Die Website besteht aus drei HTML Seiten:
+
+\begin{table}
+\centering
+\begin{tabular}[!htb]{p{4cm}|p{4cm}|p{8cm}}
+Dateiname & Beschreibung \\
+\hline
+index.html & ``Startseite'' der Website. Joinen der Queue \\
+controller.html & Steuerung der Snake \\
+gameover.html & Game over Screen nach beenden des Spiels. \\
+\end{tabular}
+\caption{HTML Dateien}
+\end{table}
+
+Um die Funktionalität der Website zu gewährleisten, wird wie oben erwähnt, JS verwendet. Hierfür wird jeder HTML Datei eine JS Datei zugewiesen:
+
+
+\begin{table}
+\centering
+\begin{tabular}[!htb]{p{4cm}|p{4cm}|p{8cm}}
+Dateiname & Beschreibung \\
+\hline
+controller.js & Funktionalität und anzeige der Steuerung. Starten und pausieren des Spiels \\
+gameover.js & Laden und anzeigen des Scores. \\
+index.js & Anzeigen der aktuellen Spieler in der Warteschlange. Betreten und verlassen der Warteschlange. Anzeigen der Warteschlangen Animation. \\
+constants.js & Konstante Variablen für die API Schnittstelle. \\
+\end{tabular}
+\caption{JS Dateien}
+\end{table}
+
+Hierbei ist zu beachten, dass die Konstanten Variablen in jeder HTML Datei eingebunden sind, um jederzeit Zugriff auf die API Schnittstelle zu bekommen. Hinzu kommen Klassen, welche als Handler dienen:
+
+\newpage
+\begin{table}
+\centering
+\begin{tabular}[!htb]{p{4cm}|p{4cm}|p{8cm}}
+Dateiname \\
+\hline
+controller\_handler.js \\
+cookie\_handler.js \\
+queue\_handler.js \\
+score\_handler.js \\
+\end{tabular}
+\caption{Handler Klassen}
+\end{table}
+
+Diese Klassen beinhalten alle nötigen Funktionen, um auf die API Schnittstelle zuzugreifen und die dadurch entstandenen Daten zurückzugeben, um das handling in den jeweiligen Klassen zu vereinfachen. Es ist zu beachten, dass Funktionen teilweise Asynchron sind, was daran liegt, dass Daten, welche zur weiteren Verarbeitung benötigt werden (zum Beispiel zur Darstellung), erst zurückgegeben werden können, wenn diese vorliegen. Somit werden diese Funktionen in einem Promise gehandhabt. Die API Zugriffe werden über einen Standard fetch Aufruf gehandhabt. \\
+Um das Benutzererlebnis zu verbessern, werden beim Game over Animationen angezeigt, welche den Score darstellen. Somit kann damit ein positives Erlebnis verbunden werden.
+
 
 \subsection{API Schnittstelle}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -325,7 +376,8 @@ Entscheidend ist hierbei die Reihenfolge, in der die Threads gestartet und gesto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{itemize}
-\item test
+\item \url{https://www.konversionskraft.de/trends/die-3-saeulen-des-responsive-webdesign.html} \\ Stand: 16.08.2022
+\item \url {https://tetris.informatik.fh-swf.de/snake/index.html} \\ Stand: 16.08.2022
 \end{itemize}
 
 \end{document}
