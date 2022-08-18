@@ -54,7 +54,7 @@
   \let \footnote \thanks
     {\LARGE \@title \par}%
     \vskip 1em%
-    {\Large Ein Snake Spiel mit Darstellung über einen Raspberry Pi \par}%
+    {\Large Ein Snake Spiel mit Darstellung über einen Raspberry Pi auf eine LED Matrix \par}%
     \vskip 5em%
     {\large
       \lineskip .5em%
@@ -113,23 +113,23 @@ Das Grundgerüst besteht aus verschiedenen Klassen, welche für den Spielablauf 
 
 \newpage
 
-\begin{table}
+\begin{table}[!htb]
 \centering
-\begin{tabular}[!htb]{p{4cm}|p{10cm}}
+\begin{tabular}{p{4cm}|p{10cm}}
 Klassenname & Beschreibung \\
 \hline
 Player.py & Zuständig für die Bewegung des Spielers, des Überprüfens auf Kollision, das Score Handling und das Fressen von Futter \\
 Logger.py & Ausgeben von Nachrichten in der Konsole zu Debug Zwecken. Es kann ein Prefix der Klasse Prefix.py angegeben werden \\
 Playground.py & Handling des Spielfeld, setzen von Blöcken\footnote{Das Spielfeld besteht aus Blöcken, welche in einem 2d Array gespeichert sind} auf dem Spielfeld, setzen einer Random Futter Position, Prüfen ob das Spielfeld voll ist \\
 Queue.py & Generelles Queue Handling (Spieler hinzufügen, entfernen aus Queue), Nächsten Spieler nehmen, UserId verifizieren\footnote{Überprüfen ob die UserId die nötige länge hat} \\
-SnakeGame.py & Game Status setzen, Game starten / stoppen / pausieren, Game loop, game resetten, game over Handling \\
+SnakeGame.py & Game Status setzen, Game starten / stoppen / pausieren, Game loop, Game resetten, Game over Handling \\
 \end{tabular}
 \caption{Grundgerüst Klassen}
 \end{table}
 
-\begin{table}
+\begin{table}[!htb]
 \centering
-\begin{tabular}[!htb]{p{4cm}|p{10cm}}
+\begin{tabular}{p{4cm}|p{10cm}}
 Klassenname & Beschreibung \\
 \hline
 Direction.py & Richtungsangaben \\
@@ -150,14 +150,14 @@ Zum testen der Funktionalitäten, wurde das Spiel vorerst mithilfe der Bibliothe
 Der Hauptteil der Website besteht aus dem Styling (CSS\footnote{Cascading Style Sheets, Gestaltungs- und Formatierungssprache}) und den Funktionen (JS\footnote{JavaScript, für dynamisches HTML}), da im Hintergrund auf die API Schnittstelle zugegriffen werden muss und um Animationen für den Benutzer anzuzeigen, um das Benutzererlebnis an erster Stelle zu halten. Somit ist die Website speziell für die Mobilen Endgeräte konzipiert, da die Steuerung über dieses im weiteren Verlauf erfolgt. Was diese Spezialisierung ausmacht ist, dass die Schriftgröße besonders auf kleine Geräte angepasst ist und die Ladezeiten so gering wie möglich gehalten werden, da diese Seite meist aus dem normalen Mobilfunknetz aufgerufen wird. Außerdem wird ein responsive Design\footnote{Responsive bedeutet in dem Fall zum Beispiel ``auf jemanden eingehen'' oder ``reaktionsfähig bleiben''} verwendet, um die Website jederzeit an fast jedes Endgerät anzupassen. ``Mobile first'' spielt hierbei eine große Rolle, unter dem Aspekt der Steuerung, aber auch unter dem Aspekt, dass man davon ausgehen kann, dass die meisten Websites heutzutage mit dem Smartphone aufgerufen werden, da man dies zu jederzeit dabei haben kann. \\
 Die Website besteht aus drei HTML Seiten:
 
-\begin{table}
+\begin{table}[!htb]
 \centering
-\begin{tabular}[!htb]{p{4cm}|p{4cm}|p{8cm}}
+\begin{tabular}{p{4cm}|p{4cm}}
 Dateiname & Beschreibung \\
 \hline
 index.html & ``Startseite'' der Website. Joinen der Queue \\
 controller.html & Steuerung der Snake \\
-gameover.html & Game over Screen nach beenden des Spiels. \\
+gameover.html & Game over Screen nach beenden des Spiels.
 \end{tabular}
 \caption{HTML Dateien}
 \end{table}
@@ -165,9 +165,9 @@ gameover.html & Game over Screen nach beenden des Spiels. \\
 Um die Funktionalität der Website zu gewährleisten, wird wie oben erwähnt, JS verwendet. Hierfür wird jeder HTML Datei eine JS Datei zugewiesen:
 
 
-\begin{table}
+\begin{table}[!htb]
 \centering
-\begin{tabular}[!htb]{p{4cm}|p{4cm}|p{8cm}}
+\begin{tabular}{p{4cm}|p{4cm}|p{8cm}}
 Dateiname & Beschreibung \\
 \hline
 controller.js & Funktionalität und anzeige der Steuerung. Starten und pausieren des Spiels \\
@@ -181,9 +181,9 @@ constants.js & Konstante Variablen für die API Schnittstelle. \\
 Hierbei ist zu beachten, dass die Konstanten Variablen in jeder HTML Datei eingebunden sind, um jederzeit Zugriff auf die API Schnittstelle zu bekommen. Hinzu kommen Klassen, welche als Handler dienen:
 
 \newpage
-\begin{table}
+\begin{table}[!htb]
 \centering
-\begin{tabular}[!htb]{p{4cm}|p{4cm}|p{8cm}}
+\begin{tabular}{p{4cm}}
 Dateiname \\
 \hline
 controller\_handler.js \\
@@ -194,8 +194,35 @@ score\_handler.js \\
 \caption{Handler Klassen}
 \end{table}
 
-Diese Klassen beinhalten alle nötigen Funktionen, um auf die API Schnittstelle zuzugreifen und die dadurch entstandenen Daten zurückzugeben, um das handling in den jeweiligen Klassen zu vereinfachen. Es ist zu beachten, dass Funktionen teilweise Asynchron sind, was daran liegt, dass Daten, welche zur weiteren Verarbeitung benötigt werden (zum Beispiel zur Darstellung), erst zurückgegeben werden können, wenn diese vorliegen. Somit werden diese Funktionen in einem Promise gehandhabt. Die API Zugriffe werden über einen Standard fetch Aufruf gehandhabt. \\
-Um das Benutzererlebnis zu verbessern, werden beim Game over Animationen angezeigt, welche den Score darstellen. Somit kann damit ein positives Erlebnis verbunden werden.
+Diese Klassen beinhalten alle nötigen Funktionen, um auf die API Schnittstelle zuzugreifen und die dadurch entstandenen Daten zurückzugeben, um das handling in den jeweiligen Klassen zu vereinfachen. Es ist zu beachten, dass Funktionen teilweise asynchron sind, was daran liegt, dass Daten, welche zur weiteren Verarbeitung benötigt werden (zum Beispiel zur Darstellung), erst zurückgegeben werden können, wenn diese vorliegen. Somit werden diese Funktionen in einem Promise gehandhabt. Die API Zugriffe werden über einen Standard fetch Aufruf gehandhabt. \\
+Um das Benutzererlebnis zu verbessern, werden beim Game over Animationen angezeigt, welche den Score darstellen. Somit kann damit ein positives Erlebnis verbunden werden. Ein API Aufruf kann wie folgt aussehen:
+
+\begin{lstlisting}
+async getScore() {
+        let score = await fetch(API_ENDPOINTS["GET_SCORE"], {method: "GET"})
+            .then(response => response.json())
+            .then(data => {
+                if(data["score"] != undefined) {
+                    return data["score"];
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                return -2;
+            });
+
+        return score;
+    }
+\end{lstlisting}
+
+Der Aufruf dieser Funktion erfolgt über ein Promise, wie bereits oben erwähnt:
+
+\begin{lstlisting}
+Promise.resolve(scoreHandler.getScore())
+        .then(score => {
+            scoreElement.innerHTML = score + " Punkt" + (score == 1 ? "" : "e") + "!";
+        });
+\end{lstlisting}
 
 
 \subsection{API Schnittstelle}
@@ -203,7 +230,7 @@ Um das Benutzererlebnis zu verbessern, werden beim Game over Animationen angezei
 %	API Schnittstellt
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Das Web Framework \textit{fastapi} ist ein modernes, hoch performanted Python Framework. Es ist einfach zu handhaben und bietet alle nötigen Funktionen, welche in diesem Projekt benötigt werden. Diese sind verschiedene CRUD\footnote{create, read, update, delete} Operationen, das mitgeben eines HTML Statuscodes und das auslesen von Cookies, um die UserId abzufragen. Um die verschiedenen Klassen aus \autoref{grundgerüst} zu verwenden, muss dem Systempfad ein weiterer Pfad hinzugefügt werden, dem Übergeordneten Ordner, da sich die Backend API in einem eigenen Unterordner befindet:
+Das Web Framework \textit{fastapi} ist ein modernes, hoch performanted Python Framework. Es ist einfach zu handhaben und bietet alle nötigen Funktionen, welche in diesem Projekt benötigt werden. Dies sind verschiedene CRUD\footnote{create, read, update, delete} Operationen, das mitgeben eines HTML Statuscodes und das auslesen von Cookies, um die UserId abzufragen. Um die verschiedenen Klassen aus \autoref{grundgerüst} zu verwenden, muss dem Systempfad ein weiterer Pfad hinzugefügt werden, dem Übergeordneten Ordner, da sich die Backend API in einem eigenen Unterordner befindet:
 
 \begin{lstlisting}
 import sys
@@ -229,7 +256,7 @@ if not userId:
 	return {"message": "userId cookie not set", "success": False}
 \end{lstlisting}
 
-Sind die weiteren Voraussetzungen erfüllt, wie in etwa ob der Spieler, welcher eine Bewegung angefragt hat momentan an der Reihe ist, wird die jeweilige Aktion ausgeführt und der Benutzer, welcher die Anfrage gestellt hat, bekommt eine Erfolgsmeldung:
+Sind die weiteren Voraussetzungen erfüllt, wie in etwa ob der Spieler, welcher eine Bewegung angefragt hat, momentan an der Reihe ist, wird die jeweilige Aktion ausgeführt und der Benutzer, welcher die Anfrage gestellt hat, bekommt eine Erfolgsmeldung:
 
 \begin{lstlisting}
 return {"message": f"success message", "success": True}
@@ -237,13 +264,10 @@ return {"message": f"success message", "success": True}
 
 Die JSON Objekte werden im Frontend verarbeitet.\\
 Folgende Operationen werden durch die API geboten:
-
-
 \newpage
-
-\begin{table}
+\begin{table}[!htb]
 \centering
-\begin{tabular}[!htb]{p{4cm}|p{4cm}|p{8cm}}
+\begin{tabular}{p{4cm}|p{4cm}|p{8cm}}
 Pfad & REST (CRUD Operation) & Beschreibung \\
 \hline
 /move/{direction} & Put (update) & Bewegt die Snake in eine neue Richtung \\
@@ -261,7 +285,12 @@ Pfad & REST (CRUD Operation) & Beschreibung \\
 \caption{API Methoden}
 \end{table}
 
-% Uvicorn mit einbringen
+Damit die API gestarten werden kann, wird der ASGI\footnote{Asynchronous Server Gateway Interface} Web server \textit{uvicorn} verwendet. Zu beachten ist hierbei, dass uvicorn über das Python Skript der API Schnittstelle gestartet wird, da es sonst zu Fehlern kommt, wenn das Spiel gestartet wird, da der Thread für die Darstellung auf dem Raspberry Pi versucht, die Startparameter zu übernehmen und dadurch eine Exception entsteht, da die Startparameter von uvicorn nicht in der Bibliothek \textit{rpi-rgb-led-matrix} gefunden werden können, da diese dort nicht existieren. Die Startfunktion der API sieht schlussendlich wie folgt aus:
+
+\begin{lstlisting}
+if __name__ == "__main__":
+    uvicorn.run("app:app", port=80, host="::", reload=True, debug=True, log_level="info", workers=1)
+\end{lstlisting}
 
 \subsection{Darstellung}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -271,15 +300,14 @@ Pfad & REST (CRUD Operation) & Beschreibung \\
 Für die Darstellung des Spielfeldes und des Scores wird die Bibliothek \textit{rpi-rgb-led-matrix} verwendet. Diese Bibliothek ist auf https://github.com/hzeller/rpi-rgb-led-matrix zu finden. Sie wird direkt auf dem Raspberry Pi installiert und kann direkt in Python eingebunden werden. Dank dieser Bibliothek kann man einzelne Pixel darstellen, oder ganze Texte. Es werden verschiedene Schriftgrößen mitgeliefert. Um das Spielfeld darzustellen, wird die Spielfeldmatrix genommen und in Pixel übersetzt. Jeder Spielfeldblock wird auf der LED Matrix in der Größe 2x2 dargestellt, um die Sichtbarkeit zu erhöhen. Außerdem wurde der Hintergrund dunkler eingestellt von der Helligkeit her, um das Spielerlebnis zu fördern. Die Display Klasse, welche für die Darstellung zuständig ist, ist von der Klasse \textit{SampleBase.py} abgeleitet und beinhaltet daher die Funktion \textit{process}, welche den infinity loop und somit die Darstellung startet. Die Display Klasse beinhaltet daher eine Funktion \textit{terminate}, um den loop zu unterbrechen. Die damit verbundenen Schwierigkeiten sind in \autoref{schwierigkeiten} beschrieben.
 
 
-\label{schwierigkeiten} % schwierigkeit mit reinbringen, dass uvicorn gestartet werden musste über startbefehl außerhalb der console
 \section{Schwierigkeiten}
+\label{schwierigkeiten}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Schwierigkeiten
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Die größte Schwierigkeit war, die API nicht zu unterbrechen, während das Spiel läuft. Es wurde \textit{multithreading} verwendet, um verschiedene Thread parallel laufen zu lassen. Somit laufen im fertigen Projekt der Thread für die Darstellung des Spiels auf dem Raspberry Pi, der Gameloop, die Überprüfung ob ein Spieler keine Inputs mehr macht und somit nicht mehr anwesend ist (AFK\footnote{away from keyboard, abwesend}) und die API Schnittstelle parallel. Es wurde versucht, einen neuen Prozess für die Darstellung auf dem Display zu verwenden, jedoch können live updates in einem separaten Prozess nicht mehr nachverfolgt werden, weshalb die Thread Variante verwendet worden ist. Die Thread wurden als \textit{daemon} Threads gestartet, damit man sie zu jedem Zeitpunkt durch ein Interrupt unterbrechen kann. Die Implementierung sieht wie folgt aus, sobald die start Methode von der API Schnittstelle aufgerufen wird:
+Die größte Schwierigkeit war es, die API nicht zu unterbrechen, während das Spiel läuft. Es wurde \textit{multithreading} verwendet, um verschiedene Threads parallel laufen zu lassen. Somit laufen im fertigen Projekt, der Thread für die Darstellung des Spiels auf dem Raspberry Pi, der Gameloop, die Überprüfung ob ein Spieler keine Inputs mehr macht und somit nicht mehr anwesend ist (AFK\footnote{away from keyboard, abwesend}) und die API Schnittstelle parallel. Es wurde versucht, einen neuen Prozess für die Darstellung auf dem Display zu verwenden, jedoch können live updates in einem separaten Prozess nicht mehr nachverfolgt werden, weshalb die Thread Variante verwendet worden ist. Die Threads wurden als \textit{daemon} Threads gestartet, damit man sie zu jedem Zeitpunkt durch ein Interrupt unterbrechen kann. Die Implementierung sieht wie folgt aus, sobald die start Methode von der API Schnittstelle aufgerufen wird:
 
-% hier code von den threads anzeigen.
 \begin{lstlisting}
 import threading
 
@@ -308,10 +336,11 @@ displayThread.join()
 
 Entscheidend ist hierbei die Reihenfolge, in der die Threads gestartet und gestoppt werden. Zu beachten ist außerdem, dass der Display Thread eine Funktion benötigt, um terminiert zu werden, ansonsten kann er nicht gestoppt werden. die Loops greifen jeweils auf den Gamestatus zu, um den in jedem Thread integrierten \textit{infinity loop} zu unterbrechen, sollte sich der Gamestatus ändern und der Thread nicht mehr benötigt werden. Somit erklärt sich auch die Reihenfolge, in welcher die Thread beendet werden. Sobald das Spiel vorbei ist und der Gameloop beendet wird, kann die afk Überprüfung ebenfalls beendet werden. Da das Spiel vorbei ist wird außerdem zum Schluss der Displaythread beendet, da es kein Spiel mehr zum darstellen gibt. Somit gehen alle Aktionen der restlichen Threads vom eigentlichen Gameloop aus.
 
-\section{Ergebnisse}
+\section{Zusammenfassung und Ausblick}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Ergebnisse
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Mithilfe von verschiedenen Bibliotheken ist es möglich, ein Snake Spiel zu entwickeln, welches mithilfe eines Mobilen Endgerätes gesteuert werden kann und auf einer LED Matrix mithilfe eines Raspberry Pi dargestellt werden kann. Dieses Ziel wurde innerhalb dieses Projektes erreicht. Es wurden die Bibliotheken \textit{pygame} und \textit{rpi-rgb-led-matrix}, das Framework \textit{fastapi} und der web server \textit{uvicorn} verwendet. Die Snake Website verfügt über ein Warteschlangensystem, welches über UserIds funktioniert, ein Controller, sowie ein Game Over screen. Im Projekt Pfad ist außerdem eine Datei \textit{Splashscreen.py} zu finden, welche einen Splashscreen auf der LED Matrix anzeigt. Dieser Splashscreen wurde jedoch nicht implementiert, da dies viele weitere Probleme bereitete. Im weiteren Verlauf gilt dies vollständig zu implementieren. Es kann im weiteren Verlauf außerdem eine Highscore Liste implementiert werden, wo man einen Namen am Ende eines Spiels auf dem Mobilen Endgerät eingeben kann, und dieser dann bei erreichen eines Highscores angezeigt wird.
 
 \newpage
 \section{Abbildungen}
@@ -377,7 +406,8 @@ Entscheidend ist hierbei die Reihenfolge, in der die Threads gestartet und gesto
 
 \begin{itemize}
 \item \url{https://www.konversionskraft.de/trends/die-3-saeulen-des-responsive-webdesign.html} \\ Stand: 16.08.2022
-\item \url {https://tetris.informatik.fh-swf.de/snake/index.html} \\ Stand: 16.08.2022
+\item \url{https://tetris.informatik.fh-swf.de/snake/index.html} \\ Stand: 16.08.2022
+\item \url{https://www.uvicorn.org} \\ Stand: 18.08.2022
 \end{itemize}
 
 \end{document}

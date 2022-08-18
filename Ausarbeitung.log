@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.6)  16 AUG 2022 12:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.6)  18 AUG 2022 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -663,88 +663,85 @@ Underfull \hbox (badness 7685) in paragraph at lines 176--177
  []
 
 [3] [4] [5]
-Overfull \hbox (50.22635pt too wide) in paragraph at lines 246--261
+Overfull \hbox (50.22635pt too wide) in paragraph at lines 270--285
  [][] 
  []
 
-[6] [7]
-<Abbildungen/Snake_Hauptmenü.png, id=162, 311.66437pt x 656.4525pt>
+[6] [7] [8]
+<Abbildungen/Snake_Hauptmenü.png, id=192, 311.66437pt x 656.4525pt>
 File: Abbildungen/Snake_Hauptmenü.png Graphic file (type png)
 <use Abbildungen/Snake_Hauptmenü.png>
 Package pdftex.def Info: Abbildungen/Snake_Hauptmenü.png  used on input line 3
-25.
+54.
 (pdftex.def)             Requested size: 176.40439pt x 371.55745pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
 [][]\OT1/cmr/m/n/12 Snake Web-si-te
  []
 
-<Abbildungen/Snake_Hauptmenü_Warteschlange.png, id=164, 312.41719pt x 656.4525
+<Abbildungen/Snake_Hauptmenü_Warteschlange.png, id=194, 312.41719pt x 656.4525
 pt>
 File: Abbildungen/Snake_Hauptmenü_Warteschlange.png Graphic file (type png)
 <use Abbildungen/Snake_Hauptmenü_Warteschlange.png>
 Package pdftex.def Info: Abbildungen/Snake_Hauptmenü_Warteschlange.png  used o
-n input line 331.
+n input line 360.
 (pdftex.def)             Requested size: 176.40439pt x 370.66597pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 [][][]\OT1/cmr/m/n/12 Snake Web-si-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 \OT1/cmr/m/n/12 Haupt-men[]u in
  []
 
-[8 <./Abbildungen/Snake_Hauptmenü.png> <./Abbildungen/Snake_Hauptmenü_Wartesc
+[9 <./Abbildungen/Snake_Hauptmenü.png> <./Abbildungen/Snake_Hauptmenü_Wartesc
 hlange.png>]
-<Abbildungen/Snake_Controller_hint_1.png, id=171, 311.66437pt x 657.95813pt>
+<Abbildungen/Snake_Controller_hint_1.png, id=201, 311.66437pt x 657.95813pt>
 File: Abbildungen/Snake_Controller_hint_1.png Graphic file (type png)
 <use Abbildungen/Snake_Controller_hint_1.png>
 Package pdftex.def Info: Abbildungen/Snake_Controller_hint_1.png  used on input
- line 342.
+ line 371.
 (pdftex.def)             Requested size: 176.40439pt x 372.40965pt.
-<Abbildungen/Snake_Controller_hint_2.png, id=172, 312.41719pt x 656.4525pt>
+<Abbildungen/Snake_Controller_hint_2.png, id=202, 312.41719pt x 656.4525pt>
 File: Abbildungen/Snake_Controller_hint_2.png Graphic file (type png)
 <use Abbildungen/Snake_Controller_hint_2.png>
 Package pdftex.def Info: Abbildungen/Snake_Controller_hint_2.png  used on input
- line 348.
+ line 377.
 (pdftex.def)             Requested size: 176.40439pt x 370.66597pt.
- [9 <./Abbildungen/Snake_Controller_hint_1.png> <./Abbildungen/Snake_Controller
-_hint_2.png>]
-<Abbildungen/Snake_Controller.png, id=179, 314.67563pt x 657.2053pt>
+ [10 <./Abbildungen/Snake_Controller_hint_1.png> <./Abbildungen/Snake_Controlle
+r_hint_2.png>]
+<Abbildungen/Snake_Controller.png, id=210, 314.67563pt x 657.2053pt>
 File: Abbildungen/Snake_Controller.png Graphic file (type png)
 <use Abbildungen/Snake_Controller.png>
 Package pdftex.def Info: Abbildungen/Snake_Controller.png  used on input line 3
-59.
+88.
 (pdftex.def)             Requested size: 176.40439pt x 368.42355pt.
-<Abbildungen/Snake_Gameover.png, id=180, 313.17pt x 655.69969pt>
+<Abbildungen/Snake_Gameover.png, id=211, 313.17pt x 655.69969pt>
 File: Abbildungen/Snake_Gameover.png Graphic file (type png)
 <use Abbildungen/Snake_Gameover.png>
-Package pdftex.def Info: Abbildungen/Snake_Gameover.png  used on input line 365
+Package pdftex.def Info: Abbildungen/Snake_Gameover.png  used on input line 394
 .
 (pdftex.def)             Requested size: 176.40439pt x 369.36044pt.
- [10 <./Abbildungen/Snake_Controller.png> <./Abbildungen/Snake_Gameover.png>]
-Overfull \hbox (72.5072pt too wide) in paragraph at lines 379--380
+ [11 <./Abbildungen/Snake_Controller.png> <./Abbildungen/Snake_Gameover.png>]
+Overfull \hbox (72.5072pt too wide) in paragraph at lines 408--409
 [][]$\OT1/cmtt/m/n/12 https : / / www . konversionskraft . de / trends / die-[]
 3-[]saeulen-[]des-[]responsive-[]webdesign .
  []
 
-[11] (Ausarbeitung.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+[12] (Ausarbeitung.aux)
 Package rerunfilecheck Info: File `Ausarbeitung.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16829 strings out of 478582
- 288529 string characters out of 2845289
- 963819 words of memory out of 3000000
- 34718 multiletter control sequences out of 15000+600000
+ 16883 strings out of 478582
+ 289208 string characters out of 2845289
+ 1059819 words of memory out of 3000000
+ 34746 multiletter control sequences out of 15000+600000
  477375 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,18n,106p,10609b,1951s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 108i,18n,106p,10609b,1283s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -762,9 +759,9 @@ s/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Zoe/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Zoe/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Zo
 e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Ausarbeitung.pdf (14 pages, 474473 bytes).
+Output written on Ausarbeitung.pdf (15 pages, 486727 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 90 named destinations out of 1000 (max. 500000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

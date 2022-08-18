@@ -5,8 +5,8 @@
 \contentsline {subsection}{\numberline {2.2}Website}{2}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}API Schnittstelle}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Darstellung}{6}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Schwierigkeiten}{6}{section.3}%
-\contentsline {section}{\numberline {4}Ergebnisse}{7}{section.4}%
-\contentsline {section}{\numberline {5}Abbildungen}{8}{section.5}%
-\contentsline {section}{\numberline {6}Quellenverzeichnis}{11}{section.6}%
+\contentsline {section}{\numberline {3}Schwierigkeiten}{7}{section.3}%
+\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{8}{section.4}%
+\contentsline {section}{\numberline {5}Abbildungen}{9}{section.5}%
+\contentsline {section}{\numberline {6}Quellenverzeichnis}{12}{section.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
